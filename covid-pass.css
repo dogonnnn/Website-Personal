@@ -1,0 +1,153 @@
+﻿body {
+    color: #272727;
+    margin: 0;
+    font-family: "Segoe UI Regular", "Open Sans Regular";
+    font-size: 11pt;
+}
+
+.bz-ml-covid-pass-header {
+    height: 56px;
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bz-ml-covid-pass-header>span {
+    margin: 0 24px;
+    font-size: 12.5pt;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.bz-ml-covid-pass-header>svg {
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.bz-ml-covid-pass-body {
+    padding: 24px;
+}
+
+.bz-ml-covid-pass-body-img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+.bz-ml-covid-pass-body-checkbox {
+    padding-top: 32px;
+}
+
+.bz-ml-covid-pass-body-text {
+    line-height: 1.5;
+}
+
+.bz-ml-covid-pass-body-text>p {
+    letter-spacing: 0.4px;
+}
+
+a {
+    color: #CF6100;
+}
+
+.bz-ml-covid-pass-footer {
+    height: 72px;
+    align-items: center;
+    border-top: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.bz-ml-covid-pass-btn {
+    align-items: center;
+    background-color: #CF6100;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 10.6pt;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    padding: 0 16px;
+    height: 39px;
+    margin: 16px 24px;
+    white-space: normal;
+    font-family: "Segoe UI Regular";
+}
+
+.bz-ml-covid-pass-btn:hover {
+    background: #A34C00;
+}
+
+.bz-ml-not-show-covid-pass__checkbox {
+    height: 16px;
+    width: 16px;
+    opacity: 0;
+    position: absolute;
+}
+
+.bz-ml-not-show-covid-pass__label {
+    bottom: 4px;
+    display: inline;
+    font-weight: normal;
+    position: relative;
+    display: flex;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.bz-ml-not-show-covid-pass__checkbox:checked+label:before {
+    background: #CF6100;
+    border: 1px solid #CF6100;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.bz-ml-not-show-covid-pass__checkbox:checked+label:after {
+    -webkit-box-shadow: 2px 0px 0px #FFF, 4px 0px 0px #FFF, 4px -2px 0px #FFF, 4px -4px 0 #FFF, 4px -6px 0 #FFF, 4px -8px 0 #FFF;
+    box-shadow: 2px 0px 0px #FFF, 4px 0px 0px #FFF, 4px -2px 0px #FFF, 4px -4px 0 #FFF, 4px -6px 0 #FFF, 4px -8px 0 #FFF;
+    -webkit-transform: rotate(45deg);
+    background: #FFF;
+    top: 8px;
+}
+
+.bz-ml-not-show-covid-pass__checkbox+label:before {
+    content: '';
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 10px;
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    display: block;
+    background-color: #FFF;
+    border: solid 1px #b7b7b7;
+}
+
+.bz-ml-not-show-covid-pass__checkbox:checked+label:after {
+    background: #ffffff;
+}
+
+.bz-ml-not-show-covid-pass__checkbox+label:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 9px;
+    background: #FFF;
+    width: 2px;
+    height: 2px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
